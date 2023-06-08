@@ -136,7 +136,7 @@ article {
   overflow: hidden; 
 }
 .personajes div a img{
-  width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+  width: 100%; /* La imagen ocuparï¿½ el ancho completo del contenedor */
   height: auto; 
 	margin-bottom: 2rem;
 }
@@ -148,16 +148,16 @@ article {
 }
 .video iframe{
   margin-top: 2%;
-  height: 600px; /* Altura fija del iframe */
+  height: 400px; /* Altura fija del iframe */
   width: 40%;
   
 }
 .video p{
   margin-left: 5%;
-  margin-right: 15%;
+  margin-right: 7%;
   height: 20%;
   background: rgba(247, 247, 247, 0.2); /* Color de fondo sobrio */
-  border: 1px solid #ccc; /* Borde sólido */
+  border: 1px solid #ccc; /* Borde sï¿½lido */
   border-radius: 8px; /* Radio de borde para suavizar las esquinas */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el texto */
   color: #333; /* Color del texto */
@@ -181,15 +181,13 @@ h2 {
 
 .introduction {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 19px;
+  font-size: 15px;
   color: #000000;
   margin-bottom: 20px;
-  width: 35%;
+  width: 40%;
 }
 
 p {
-  margin-left: 5%;
-  margin-right: 5%;
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
   color: #000000;
@@ -214,7 +212,7 @@ a:hover {
   margin-left: 5%;
   margin-right: 15%;
   background: rgba(247, 247, 247, 0.2); /* Color de fondo sobrio */
-  border: 1px solid #ccc; /* Borde sólido */
+  border: 1px solid #ccc; /* Borde sï¿½lido */
   border-radius: 8px; /* Radio de borde para suavizar las esquinas */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el texto */
   color: #333; /* Color del texto */  
@@ -238,7 +236,7 @@ a:hover {
 }
 
 button#guardar {
-  display: none; /* Oculta el botón inicialmente */
+  display: none; /* Oculta el botï¿½n inicialmente */
 }
 .pie {
   display: none;
