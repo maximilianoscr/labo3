@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header{
+  margin: 0;
+}
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+article {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.contenedor_fondo {
+  height: 100vh;
+  overflow: hidden;
+}
+.contenedor_fondo img {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Color de fondo tenue */
+  z-index: 9999; /* Asegura que el navbar estÃ© por encima de otros elementos */
+  transition: all 0.3s ease; /* TransiciÃ³n suave al mostrar/ocultar el menÃº */
+  opacity: 10%;
+}
+#navbar {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#navbar.hover {
+  opacity: 1;
+  background-color: #f7f7f7;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.5%;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px; /* Espacio entre las opciones */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Color de texto */
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease; /* TransiciÃ³n suave para el color de texto */
+}
+
+.navbar a:hover {
+  color: #ff6600; /* Color de texto al pasar el cursor por encima */
+}
+
+.navbar .submenu {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo casi transparente del submenu */
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra del submenu */
+}
+
+.navbar li:hover .submenu {
+  display: block;
+}
+
+.navbar .submenu li {
+  padding: 10px;
+}
+
+.navbar .submenu a {
+  color: #333; /* Color de texto del submenu */
+}
+
+.navbar .submenu a:hover {
+  color: #ff6600; /* Color de texto del submenu al pasar el cursor por encima */
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.trailer {
+  padding-top: 20px; /* Espacio interno del div */
+  background-color: #fefefe;
+  margin: 0% auto;  
+  height: 100vh; /* 100% de la altura del viewport */
+  text-align: center;
+  background-image: url('images/Fondo4.jpg');
+  background-size: cover; /* Ajusta el tamaï¿½o de la imagen al div */
+  background-position: center; /* Centra la imagen dentro del div */
+  position: relative;
+  width: 100%;
+}
+.trailer h2 {
+  text-align: left;
+  margin-top: 5%; /* Separaciï¿½n del borde superior */
+  margin-bottom: 10px; /* Separaciï¿½n del borde inferior */
+}
+.personajes{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	margin-top: 15%;
+	display: flex;
+}
+.personajes p{
+  text-align: center;
+}
+.personajes div{
+	padding: 2%;
+  width: 30%; /* Ancho deseado para el contenedor */
+  height: 27%; /* Alto deseado para el contenedor */
+  overflow: hidden; 
+}
+.personajes div a img{
+  width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+  height: auto; 
+	margin-bottom: 2rem;
+}
+.personajes div:hover{
+  transform: scale(1.3);
+}
+.video {
+  display: inline-flex;
+}
+.video iframe{
+  margin-top: 2%;
+  height: 600px; /* Altura fija del iframe */
+  width: 40%;
+  
+}
+.video p{
+  margin-left: 5%;
+  margin-right: 15%;
+  height: 20%;
+  background: rgba(247, 247, 247, 0.2); /* Color de fondo sobrio */
+  border: 1px solid #ccc; /* Borde sólido */
+  border-radius: 8px; /* Radio de borde para suavizar las esquinas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el texto */
+  color: #333; /* Color del texto */
+  padding: 10px; /* Espacio interno para el texto */
+}
+/*pruebas*/
+h1 {
+  margin-top:3.5%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:4rem;
+  -webkit-text-stroke: 1.3px #000; /* Grosor y color del borde */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.introduction {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 35%;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+
+}
+
+a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4500;
+}
+/*Estilos para estar*/
+.rating {
+  position: fixed;
+  top: 50%;
+  left: 1.2%;
+  width: 13%;
+  margin-left: 5%;
+  margin-right: 15%;
+  background: rgba(247, 247, 247, 0.2); /* Color de fondo sobrio */
+  border: 1px solid #ccc; /* Borde sólido */
+  border-radius: 8px; /* Radio de borde para suavizar las esquinas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el texto */
+  color: #333; /* Color del texto */  
+  padding: 10px; /* Espacio interno para el texto */
+}
+.rating h2{
+  text-align: center;
+}
+
+.star {
+  display: inline-block;
+  width: 25px; /* Ancho de cada estrella */
+  height: 25px; /* Alto de cada estrella */
+  background-image: url('images/estar_vacia.webp');
+  background-size: cover;
+  margin-bottom: 7%;
+}
+
+.star.selected {
+  background-image: url('images/estar_llena.webp');
+}
+
+button#guardar {
+  display: none; /* Oculta el botón inicialmente */
+}
+.pie {
+  display: none;
+}
