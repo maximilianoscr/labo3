@@ -261,5 +261,6 @@ footer img{
 /*galeria*/
 article.secundario{
   margin-top: 8%;
-  display: inline-flex;
+  height: 100vh;
+  overflow-y: auto;
 }
