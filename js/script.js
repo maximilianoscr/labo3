@@ -22,10 +22,3 @@ document.addEventListener('DOMContentLoaded', function() {
   resetNavbarOpacity();
 
 });
-$(document).ready(function() {
-  // Al hacer clic en una estrella
-  $('.star').click(function() {
-    $(this).toggleClass('selected'); // Agrega o remueve la clase "selected"
-    $('#guardar').show(); // Muestra el botón de "Guardar Valoración"
-  });
-});

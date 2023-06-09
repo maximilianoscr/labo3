@@ -8,13 +8,11 @@
     <title>Bienvenido</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/lightbox.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="contenedor_fondo">
-            <img class='fondo' src="images/fondo.jpg"  alt="">
-        </div> 
         <nav id="navbar" class="navbar">
           <ul>
             <li>
@@ -59,12 +57,32 @@
           </ul>
         </nav>
     </header>
-    <footer>
-        <img src="images/redes/facebook.png" alt="Facebook">
-        <img src="images/redes/twitter.png" alt="Twitter">
-        <img src="images/redes/youtube.png" alt="Youtube">
-        <img src="images/redes/instagram.png" alt="Instagram">
-    </footer>
-    <script src="js/script.js"></script>
+    
+  <article class="secundario">
+    <div>
+    <a class="example-image-link" href="images/1.webp" data-lightbox="1" data-title="PRIMER IMAGEN">
+      <img src="images/1m.webp" alt="Imagen 1">
+    </a>
+    </div>
+    <div>
+      <a class="example-image-link" href="images/2.webp" data-lightbox="1" data-title="SEGUNDA IMAGEN">
+        <img src="images/2m.webp" alt="Imagen 2">
+      </a>
+    </div>
+    <div>
+      <a class="example-image-link" href="images/3.webp" data-lightbox="1" data-title="TERCERA IMAGEN">
+        <img src="images/3m.webp" alt="Imagen 3">
+      </a>
+    </div>
+  </article>
+  <!-- Agrega más elementos li con las imágenes -->
+<footer>
+  <img src="images/redes/facebook.png" alt="Facebook">
+  <img src="images/redes/twitter.png" alt="Twitter">
+  <img src="images/redes/youtube.png" alt="Youtube">
+  <img src="images/redes/instagram.png" alt="Instagram">
+</footer>
+<script src="js/script.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
